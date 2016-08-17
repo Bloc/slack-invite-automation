@@ -25,6 +25,8 @@ html
     script.
       var tokenRequired = #{tokenRequired};
       var form = document.getElementById('join-form');
+      var first_name = document.getElementById('slack-first_name');
+      var last_name = document.getElementById('slack-last_name');
       var email = document.getElementById('slack-email');
       var token = document.getElementById('slack-token');
       form.addEventListener('submit', function(evt) {

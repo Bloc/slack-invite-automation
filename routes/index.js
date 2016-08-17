@@ -27,6 +27,8 @@ router.post('/invite', function(req, res) {
         url: 'https://'+ config.slackUrl + '/api/users.admin.invite',
         form: {
           email: req.body.email,
+          first_name: req.body.first_name,
+          last_name: req.body.last_name,
           token: config.slacktoken,
           set_active: true
         }
