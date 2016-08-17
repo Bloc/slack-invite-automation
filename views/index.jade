@@ -16,8 +16,8 @@ html
         .content
           .information
             form(method="POST", action="/invite")#join-form.form
-              input(type="first_name", name="first_name", placeholder="Enter Your First Name")#slack-first_name.field
-              input(type="last_name", name="last_name", placeholder="Enter Your Last Name")#slack-last_name.field
+              input(type="first_name", name="first_name", placeholder="First Name")#slack-first_name.field
+              input(type="last_name", name="last_name", placeholder="Last Name")#slack-last_name.field
               input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
