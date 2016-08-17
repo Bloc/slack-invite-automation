@@ -7,7 +7,7 @@ html,body{
 margin:0;
 padding:0;
 font-family: 'Open Sans', sans-serif;
-background: #fff url(../images/bg.jpg) center top no-repeat;
+background-color: #333333;
 background-size: cover;
 height: 100%;
 width: 100%;
@@ -34,7 +34,6 @@ float: left;
 
 
 .header{
-	margin-top: 160px;
 	margin-bottom: 40px;
 }
 
@@ -70,7 +69,6 @@ h2 strong{
 
 .information{
 width: 480px;
-padding-top: 35px;
 margin: 0 auto;
 }
 
@@ -89,7 +87,6 @@ display: block;
 .form{
 position: relative;
 width: 478px;
-margin-top: 20px;
 }
 
 .field{
