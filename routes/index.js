@@ -3,6 +3,18 @@ var router = express.Router();
 var request = require('request');
 var config = require('../config');
 
+router.get('/', function(req, res, next){
+  if (req.headers.referer === undefined || req.headers.referer.indexOf('bloc.io') === -1) {
+		res.render('result', {
+			community: config.community,
+			message: 'Failed! ' + 'Invalid domain.',
+			isFailed: true
+		});
+	} else {
+		next();
+	}
+})
+
 router.get('/', function(req, res) {
   res.setLocale(config.locale);
   res.render('index', { community: config.community,
